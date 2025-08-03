@@ -1,5 +1,17 @@
 {
-  "node": {},
+  "node": {
+    "60c103cec2b428e142a6a60725222c5009f10bb32b": {
+      "workers": {
+        "app/page": {
+          "moduleId": "(action-browser)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22%2Fhome%2Fproject%2Fsrc%2Fapp%2Factions.ts%22%2C%5B%7B%22id%22%3A%2260c103cec2b428e142a6a60725222c5009f10bb32b%22%2C%22exportedName%22%3A%22getWellnessTip%22%7D%5D%5D%5D&__client_imported__=true!",
+          "async": false
+        }
+      },
+      "layer": {
+        "app/page": "action-browser"
+      }
+    }
+  },
   "edge": {},
   "encryptionKey": "+4GUk2nQOvo/Zz5U/atwfqj/dYD4Ox0XHbqJR4trcLw="
 }
