@@ -104,7 +104,6 @@ export default {
       animation: {
         'accordion-down': 'accordion-down 0.2s ease-out',
         'accordion-up': 'accordion-up 0.2s ease-out',
-        floating: 'floating 3s ease-in-out infinite',
       },
       typography: ({ theme }: { theme: any }) => ({
         DEFAULT: {

@@ -72,7 +72,9 @@ export default function ProductPage() {
               <div className="flex justify-center">
                 <SariraFigMalt
                     alt="SARIRA Fig Malt"
-                    className="w-full max-w-lg rounded-lg shadow-2xl"
+                    width={500}
+                    height={500}
+                    className="w-full max-w-lg rounded-lg shadow-2xl object-contain"
                 />
               </div>
               <div>

@@ -27,7 +27,7 @@ export function Product() {
                 alt="SARIRA Fig Malt Pouch"
                 width={500}
                 height={500}
-                className="w-full max-w-md mx-auto rounded-lg shadow-xl animate-floating"
+                className="w-full max-w-md mx-auto rounded-lg shadow-xl"
             />
           </div>
           

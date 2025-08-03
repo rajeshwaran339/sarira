@@ -62,7 +62,7 @@ export function Hero() {
                 width={500}
                 height={500}
                 priority
-                className="w-full max-w-md rounded-lg shadow-2xl animate-floating"
+                className="w-full max-w-md rounded-lg shadow-2xl"
             />
         </div>
       </div>
