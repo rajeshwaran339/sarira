@@ -8,7 +8,7 @@ type CounterProps = {
 };
 
 export function Counter({ target, className }: CounterProps) {
-  const [count, setCount] = useState(0);
+  const [count, setCount] = useState(target);
   const ref = useRef<HTMLDivElement>(null);
   const [isIntersecting, setIntersecting] = useState(false);
 
@@ -39,6 +39,7 @@ export function Counter({ target, className }: CounterProps) {
 
   useEffect(() => {
     if (isIntersecting) {
+      setCount(0);
       let start = 0;
       const duration = 2000;
       let startTime: number | null = null;
@@ -60,7 +61,7 @@ export function Counter({ target, className }: CounterProps) {
     }
   }, [isIntersecting, target]);
   
-  const displayValue = isIntersecting ? count : 0;
+  const displayValue = count;
 
   const formatDisplayValue = (value: number) => {
     if (target >= 1000) {

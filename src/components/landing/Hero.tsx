@@ -14,17 +14,8 @@ const benefits = [
 ];
 
 export function Hero() {
-  const [typedText, setTypedText] = useState('');
+  const [typedText, setTypedText] = useState("Feed Your Roots. Fuel Your Rise.");
   const textToType = "Feed Your Roots. Fuel Your Rise.";
-
-  useEffect(() => {
-    if (typedText.length < textToType.length) {
-      const timeoutId = setTimeout(() => {
-        setTypedText(textToType.slice(0, typedText.length + 1));
-      }, 50);
-      return () => clearTimeout(timeoutId);
-    }
-  }, [typedText]);
 
   return (
     <section id="home" className="relative pt-32 pb-20 md:pt-48 md:pb-28 overflow-hidden bg-gradient-to-b from-background to-secondary">
@@ -33,7 +24,6 @@ export function Hero() {
         <div className="md:w-1/2 text-center md:text-left mb-12 md:mb-0">
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-primary mb-4 min-h-[144px] md:min-h-[168px] lg:min-h-[192px]">
             {typedText}
-            <span className="opacity-50 animate-ping">|</span>
           </h1>
           <p className="text-xl text-muted-foreground mb-8 max-w-xl mx-auto md:mx-0">
             Functional wellness rooted in Tamil tradition, blended for today's lifestyle.
